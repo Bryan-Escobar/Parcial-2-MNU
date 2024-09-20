@@ -32,8 +32,9 @@ class ClasePrincipal (QMainWindow):
             for j in range(3):
                 a.append([0]*3)
                 b.append([0]*3)
+                res.append([0]*3)
         '''Datos ingresado de a y b'''
-        a[0][0]=float(self.ui.a00.text())
+        '''a[0][0]=float(self.ui.a00.text())
         a[0][1]=float(self.ui.a01.text())
         a[0][2]=float(self.ui.a02.text())
         
@@ -43,13 +44,18 @@ class ClasePrincipal (QMainWindow):
         
         a[2][0]=float(self.ui.a20.text())
         a[2][1]=float(self.ui.a21.text())
-        a[2][2]=float(self.ui.a22.text())
-        
-        self.ui.dockBasica.show()  
+        a[2][2]=float(self.ui.a22.text())'''
+        #obtener valores ingresados
+        for i in range(3):
+            for j in range(3):
+                a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
+                b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
+                res[i][j]=a[i][j]+a[i][j]
+                self.ui.dockBasica.show()  
+                getattr(self.ui,f'r{i}{j}').setText(str(res[i][j]))
                 
-        tipoOperacion=self.ui.cbxOperacionBasica.currentText()
-        if (tipoOperacion=="SUMA"):
-            print("Escogió suma ")
+                #print(str(a[i][j]))
+
             
 if __name__ == "__main__":
     app=QApplication(sys.argv)
