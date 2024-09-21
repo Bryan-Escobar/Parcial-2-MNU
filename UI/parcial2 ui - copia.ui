@@ -88,7 +88,12 @@
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">border: 2px solid black;</string>
+           <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
           </property>
           <widget class="QLineEdit" name="r00">
            <property name="geometry">
@@ -193,7 +198,12 @@
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 2px solid black;</string>
+         <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
         </property>
         <widget class="QLineEdit" name="a00">
          <property name="geometry">
@@ -378,7 +388,12 @@
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border: 2px solid black;</string>
+         <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
         </property>
         <widget class="QLineEdit" name="b00">
          <property name="geometry">

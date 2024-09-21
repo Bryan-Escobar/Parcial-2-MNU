@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'parcial2 ui - copiaJQhxew.ui'
+## Form generated from reading UI file 'parcial2 ui - copiaYnFBjQ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -51,7 +51,12 @@ class Ui_MainWindow(object):
         self.widget_4 = QWidget(self.dockWidgetContents)
         self.widget_4.setObjectName(u"widget_4")
         self.widget_4.setGeometry(QRect(90, 10, 241, 221))
-        self.widget_4.setStyleSheet(u"border: 2px solid black;")
+        self.widget_4.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
         self.r00 = QLineEdit(self.widget_4)
         self.r00.setObjectName(u"r00")
         self.r00.setGeometry(QRect(20, 20, 41, 41))
@@ -83,7 +88,12 @@ class Ui_MainWindow(object):
         self.widget = QWidget(self.tab)
         self.widget.setObjectName(u"widget")
         self.widget.setGeometry(QRect(160, 170, 241, 221))
-        self.widget.setStyleSheet(u"border: 2px solid black;")
+        self.widget.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
         self.a00 = QLineEdit(self.widget)
         self.a00.setObjectName(u"a00")
         self.a00.setGeometry(QRect(20, 20, 41, 41))
@@ -135,7 +145,12 @@ class Ui_MainWindow(object):
         self.widget_3 = QWidget(self.tab)
         self.widget_3.setObjectName(u"widget_3")
         self.widget_3.setGeometry(QRect(530, 170, 241, 221))
-        self.widget_3.setStyleSheet(u"border: 2px solid black;")
+        self.widget_3.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
         self.b00 = QLineEdit(self.widget_3)
         self.b00.setObjectName(u"b00")
         self.b00.setGeometry(QRect(20, 20, 41, 41))

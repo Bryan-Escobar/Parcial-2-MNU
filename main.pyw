@@ -9,7 +9,7 @@ from PySide6 import *
 from formulario import Ui_MainWindow
 #Import para la tabla
 from PySide6.QtGui import QStandardItemModel, QStandardItem
-import sympy as sp #libreria para derivadas
+
 import math
 
 
@@ -50,10 +50,17 @@ class ClasePrincipal (QMainWindow):
             for j in range(3):
                 a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
                 b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
-                res[i][j]=a[i][j]+a[i][j]
+                seleccion=self.ui.cbxOperacionBasica.currentText()
+                if seleccion=="SUMA":
+                    print("suma")
+                    res[i][j]=a[i][j]+b[i][j]
+                elif (seleccion=="RESTA"):
+                        res[i][j]=a[i][j]-b[i][j]
+                        print("resta")
+                elif (self.ui.cbxOperacionBasica.currentText=="MULTIPLICACION"):
+                        print("multi")
                 self.ui.dockBasica.show()  
                 getattr(self.ui,f'r{i}{j}').setText(str(res[i][j]))
-                
                 #print(str(a[i][j]))
 
             
