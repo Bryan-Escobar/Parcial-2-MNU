@@ -46,7 +46,7 @@ class ClasePrincipal (QMainWindow):
         a[2][1]=float(self.ui.a21.text())
         a[2][2]=float(self.ui.a22.text())'''
         #obtener valores ingresados
-        for i in range(3):
+        '''for i in range(3):
             for j in range(3):
                 a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
                 b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
@@ -61,7 +61,37 @@ class ClasePrincipal (QMainWindow):
                         print("multi")
                 self.ui.dockBasica.show()  
                 getattr(self.ui,f'r{i}{j}').setText(str(res[i][j]))
+                #print(str(a[i][j]))'''
+        #lectura de datos
+        for i in range(3):
+            for j in range(3):
+                a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
+                b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
+        seleccion=self.ui.cbxOperacionBasica.currentText()
+        if seleccion=="SUMA":
+            print("suma")
+            for i in range(3):
+                for j in range(3):
+                    res[i][j]=a[i][j]+b[i][j]
+        elif (seleccion=="RESTA"):
+            print("resta")
+            for i in range(3):
+                for j in range(3):
+                    res[i][j]=a[i][j]-b[i][j]
+        elif (seleccion=="MULTIPLICACION"):
+            print()
+            for i in range(3):
+                for j in range(3):
+                    res[i][j]=round(a[i][0]*b[0][j]+a[i][1]*b[1][j]+a[i][2]*b[2][j],2)
+            
+        #graficacion de resultados
+        for i in range (3):
+            for j in range (3):
+                self.ui.dockBasica.show()  
+                getattr(self.ui,f'r{i}{j}').setText(str(res[i][j]))
                 #print(str(a[i][j]))
+
+        
 
             
 if __name__ == "__main__":
