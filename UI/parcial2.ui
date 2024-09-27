@@ -35,12 +35,12 @@
        <rect>
         <x>-4</x>
         <y>-1</y>
-        <width>981</width>
+        <width>1131</width>
         <height>671</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -49,10 +49,10 @@
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>630</x>
-          <y>120</y>
-          <width>81</width>
-          <height>81</height>
+          <x>580</x>
+          <y>140</y>
+          <width>51</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="font">
@@ -65,133 +65,10 @@
          <string>Matriz B</string>
         </property>
        </widget>
-       <widget class="QDockWidget" name="dockBasica">
-        <property name="geometry">
-         <rect>
-          <x>590</x>
-          <y>410</y>
-          <width>391</width>
-          <height>271</height>
-         </rect>
-        </property>
-        <property name="windowTitle">
-         <string>Resultado</string>
-        </property>
-        <widget class="QWidget" name="dockWidgetContents">
-         <widget class="QWidget" name="widget_4" native="true">
-          <property name="geometry">
-           <rect>
-            <x>90</x>
-            <y>10</y>
-            <width>241</width>
-            <height>221</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true"> border-radius: 10px;
-    background-color: #E5E5E5;
-    border: 2px solid black;
-    font-weight: normal;
-    color: black;
-    padding: 5px;</string>
-          </property>
-          <widget class="QLineEdit" name="r00">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>20</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r01">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>20</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r02">
-           <property name="geometry">
-            <rect>
-             <x>180</x>
-             <y>20</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r11">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>90</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r10">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>90</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r12">
-           <property name="geometry">
-            <rect>
-             <x>180</x>
-             <y>90</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r21">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>160</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r22">
-           <property name="geometry">
-            <rect>
-             <x>180</x>
-             <y>160</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="r20">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>160</y>
-             <width>41</width>
-             <height>41</height>
-            </rect>
-           </property>
-          </widget>
-         </widget>
-        </widget>
-       </widget>
        <widget class="QWidget" name="widget" native="true">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>90</x>
           <y>170</y>
           <width>241</width>
           <height>221</height>
@@ -299,9 +176,9 @@
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>220</x>
-          <y>10</y>
-          <width>631</width>
+          <x>400</x>
+          <y>0</y>
+          <width>361</width>
           <height>61</height>
          </rect>
         </property>
@@ -318,10 +195,10 @@
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>120</y>
-          <width>81</width>
-          <height>81</height>
+          <x>190</x>
+          <y>140</y>
+          <width>51</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="font">
@@ -338,9 +215,9 @@
         <property name="geometry">
          <rect>
           <x>240</x>
-          <y>400</y>
-          <width>131</width>
-          <height>81</height>
+          <y>440</y>
+          <width>91</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="font">
@@ -356,10 +233,10 @@
        <widget class="QComboBox" name="cbxOperacionBasica">
         <property name="geometry">
          <rect>
-          <x>200</x>
-          <y>460</y>
-          <width>191</width>
-          <height>41</height>
+          <x>220</x>
+          <y>470</y>
+          <width>131</width>
+          <height>31</height>
          </rect>
         </property>
         <item>
@@ -381,7 +258,7 @@
        <widget class="QWidget" name="widget_3" native="true">
         <property name="geometry">
          <rect>
-          <x>530</x>
+          <x>490</x>
           <y>170</y>
           <width>241</width>
           <height>221</height>
@@ -489,8 +366,8 @@
        <widget class="QPushButton" name="btnCalcularBasica">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>430</y>
+          <x>510</x>
+          <y>450</y>
           <width>141</width>
           <height>81</height>
          </rect>
@@ -508,8 +385,8 @@
        <widget class="QLabel" name="label_7">
         <property name="geometry">
          <rect>
-          <x>300</x>
-          <y>90</y>
+          <x>410</x>
+          <y>80</y>
           <width>351</width>
           <height>41</height>
          </rect>
@@ -528,11 +405,483 @@
 Las fracciones se deben ingresar como decimal</string>
         </property>
        </widget>
+       <widget class="QDockWidget" name="dockBasica">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>140</y>
+          <width>271</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="windowTitle">
+         <string>Resultado</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents">
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>241</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
+          </property>
+          <widget class="QLineEdit" name="r00">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r01">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r02">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r11">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r10">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r12">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r21">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r22">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="r20">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>260</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>45</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
         <string>Inversa</string>
        </attribute>
+       <widget class="QDockWidget" name="dockBasica_2">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>160</y>
+          <width>271</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="windowTitle">
+         <string>Resultado</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_2">
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>241</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
+          </property>
+          <widget class="QLineEdit" name="j00">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j01">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j02">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>20</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j11">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j10">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j12">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>90</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j21">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j22">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="j20">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>280</y>
+          <width>21</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>45</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>=</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>100</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 2px solid black;</string>
+        </property>
+        <property name="text">
+         <string>Ingrese el valor de cada elemento de la matrices A 
+Las fracciones se deben ingresar como decimal</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnCalcularInversa">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>450</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CALCULAR</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>190</y>
+          <width>241</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border-radius: 10px;
+    background-color: #E5E5E5;
+    border: 2px solid black;
+    font-weight: normal;
+    color: black;
+    padding: 5px;</string>
+        </property>
+        <widget class="QLineEdit" name="i00">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i01">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>20</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i02">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>20</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i11">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>90</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i10">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i12">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>90</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i21">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>160</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i22">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="i20">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>160</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>20</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>36</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Matriz Inversa</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>160</y>
+          <width>51</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Matriz A</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -542,16 +891,6 @@ Las fracciones se deben ingresar como decimal</string>
      </attribute>
     </widget>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1158</width>
-     <height>22</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

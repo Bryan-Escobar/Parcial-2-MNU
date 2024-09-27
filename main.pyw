@@ -20,7 +20,9 @@ class ClasePrincipal (QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.dockBasica.hide()
+        self.ui.dockBasica_2.hide()
         self.ui.btnCalcularBasica.clicked.connect(self.CalcularBasica)
+        self.ui.btnCalcularInversa.clicked.connect(self.CalcularInversa)
         
     def CalcularBasica(self):
         a=[]
@@ -68,6 +70,7 @@ class ClasePrincipal (QMainWindow):
                 a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
                 b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
         seleccion=self.ui.cbxOperacionBasica.currentText()
+        
         if seleccion=="SUMA":
             print("suma")
             for i in range(3):
@@ -90,8 +93,89 @@ class ClasePrincipal (QMainWindow):
                 self.ui.dockBasica.show()  
                 getattr(self.ui,f'r{i}{j}').setText(str(res[i][j]))
                 #print(str(a[i][j]))
-
+    
+    def CalcularInversa(self):
+        a = []
+        aCof=[]
+        aT = []
+        invM = []
         
+        #iniclaizar matrices
+        for i in range(3):
+            for j in range(3):
+                aCof.append([0]*3)
+                aT.append([0]*3)
+                invM.append([0]*3)
+                a.append([0]*3)
+                
+        #obtener valores ingresados
+        for i in range(3):
+            for j in range(3):
+                a[i][j] = float(getattr(self.ui,  f'i{i}{j}' ).text())
+        
+        #imprimir matriz
+        print('Matriz')
+        for i in range(3):
+            print('[', end=' ')
+            for j in range(3):
+                print(a[i][j], end= '  ')
+            print(']')
+            print(' ')
+                
+        #calcular determinante
+        dp=a[0][0]*a[1][1]*a[2][2]+a[1][0]*a[2][1]*a[0][2]+a[2][0]*a[0][1]*a[1][2]
+        ds=a[0][2]*a[1][1]*a[2][0]+a[1][2]*a[2][1]*a[0][0]+a[2][2]*a[0][1]*a[1][0]
+        det=dp-ds
+        #det = i[0][0]*i[1][1]*i[2][2]+i[0][1]*i[1][2]*i[2][0]+i[0][2]*i[1][0]*i[2][1]-i[0][2]*i[1][1]*i[2][0]-i[0][1]*i[1][0]*i[2][2]-i[0][0]*i[1][2]*i[2][1]
+        print('El determinante es ', det)
+        #Generar matriz cofactores = Matriz Menor * Matriz Signos
+
+        aCof[0][0]=a[1][1]*a[2][2]-a[1][2]*a[2][1]
+        aCof[0][1]=-(a[1][0]*a[2][2]-a[2][0]*a[1][2])
+        aCof[0][2]=a[1][0]*a[2][1]-a[1][1]*a[2][0]
+
+        aCof[1][0]=-(a[0][1]*a[2][2]-a[2][1]*a[0][2])
+        aCof[1][1]=a[0][0]*a[2][2]-a[2][0]*a[0][2]
+        aCof[1][2]=-(a[0][0]*a[2][1]-a[2][0]*a[0][1])
+
+        aCof[2][0]=a[0][1]*a[1][2]-a[1][1]*a[0][2]
+        aCof[2][1]=-(a[0][0]*a[1][2]-a[1][0]*a[0][2])
+        aCof[2][2]=a[0][0]*a[1][1]-a[1][0]*a[0][1]
+        
+        #Imprimir Matriz cofactores
+        print('Matriz Cofactores: ')
+        for i in range(3):
+            print('[', end=' ')
+            for j in range(3):
+                print(aCof[i][j], end= '  ')
+            print(']')
+            print(' ')
+        
+        #Calcular adjunta transpuesta
+        for i in range(3):
+            for j in range(3):
+                aT[i][j] = aCof[j][i]
+                
+        #Dividir Cofactores entre Determinante
+        for i in range(3):
+            for j in range(3):
+                invM[i][j] = round(aT[i][j]/det,2)
+                
+        #graficacion de resultados
+        for i in range (3):
+            for j in range (3):
+                self.ui.dockBasica_2.show()  
+                getattr(self.ui,f'j{i}{j}').setText(str(invM[i][j]))
+         
+                
+        print('Matriz inversa: ')
+        for i in range(3):
+            print('[', end=' ')
+            for j in range(3):
+                print(invM[i][j], end= '  ')
+            print(']')
+            print(' ')        
+                       
 
             
 if __name__ == "__main__":
