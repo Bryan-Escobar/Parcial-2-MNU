@@ -113,21 +113,21 @@ class ClasePrincipal (QMainWindow):
             for j in range(3):
                 a[i][j] = float(getattr(self.ui,  f'i{i}{j}' ).text())
         
-        #imprimir matriz
-        print('Matriz')
-        for i in range(3):
-            print('[', end=' ')
-            for j in range(3):
-                print(a[i][j], end= '  ')
-            print(']')
-            print(' ')
+        # #imprimir matriz
+        # print('Matriz')
+        # for i in range(3):
+        #     print('[', end=' ')
+        #     for j in range(3):
+        #         print(a[i][j], end= '  ')
+        #     print(']')
+        #     print(' ')
                 
         #calcular determinante
         dp=a[0][0]*a[1][1]*a[2][2]+a[1][0]*a[2][1]*a[0][2]+a[2][0]*a[0][1]*a[1][2]
         ds=a[0][2]*a[1][1]*a[2][0]+a[1][2]*a[2][1]*a[0][0]+a[2][2]*a[0][1]*a[1][0]
         det=dp-ds
-        #det = i[0][0]*i[1][1]*i[2][2]+i[0][1]*i[1][2]*i[2][0]+i[0][2]*i[1][0]*i[2][1]-i[0][2]*i[1][1]*i[2][0]-i[0][1]*i[1][0]*i[2][2]-i[0][0]*i[1][2]*i[2][1]
-        print('El determinante es ', det)
+        
+        # print('El determinante es ', det)
         #Generar matriz cofactores = Matriz Menor * Matriz Signos
 
         aCof[0][0]=a[1][1]*a[2][2]-a[1][2]*a[2][1]
@@ -142,14 +142,14 @@ class ClasePrincipal (QMainWindow):
         aCof[2][1]=-(a[0][0]*a[1][2]-a[1][0]*a[0][2])
         aCof[2][2]=a[0][0]*a[1][1]-a[1][0]*a[0][1]
         
-        #Imprimir Matriz cofactores
-        print('Matriz Cofactores: ')
-        for i in range(3):
-            print('[', end=' ')
-            for j in range(3):
-                print(aCof[i][j], end= '  ')
-            print(']')
-            print(' ')
+        # #Imprimir Matriz cofactores
+        # print('Matriz Cofactores: ')
+        # for i in range(3):
+        #     print('[', end=' ')
+        #     for j in range(3):
+        #         print(aCof[i][j], end= '  ')
+        #     print(']')
+        #     print(' ')
         
         #Calcular adjunta transpuesta
         for i in range(3):
@@ -168,13 +168,13 @@ class ClasePrincipal (QMainWindow):
                 getattr(self.ui,f'j{i}{j}').setText(str(invM[i][j]))
          
                 
-        print('Matriz inversa: ')
-        for i in range(3):
-            print('[', end=' ')
-            for j in range(3):
-                print(invM[i][j], end= '  ')
-            print(']')
-            print(' ')        
+        # print('Matriz inversa: ')
+        # for i in range(3):
+        #     print('[', end=' ')
+        #     for j in range(3):
+        #         print(invM[i][j], end= '  ')
+        #     print(']')
+        #     print(' ')        
                        
 
             

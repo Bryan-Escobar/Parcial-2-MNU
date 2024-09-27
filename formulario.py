@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'parcial2tVqrjV.ui'
+## Form generated from reading UI file 'parcial2fMkYZr.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -300,6 +300,242 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.tabBasica, "")
         self.tabAvanzada = QWidget()
         self.tabAvanzada.setObjectName(u"tabAvanzada")
+        self.widget_6 = QWidget(self.tabAvanzada)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setGeometry(QRect(290, 150, 71, 61))
+        self.widget_6.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k00 = QLineEdit(self.widget_6)
+        self.k00.setObjectName(u"k00")
+        self.k00.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_7 = QWidget(self.tabAvanzada)
+        self.widget_7.setObjectName(u"widget_7")
+        self.widget_7.setGeometry(QRect(440, 150, 71, 61))
+        self.widget_7.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k01 = QLineEdit(self.widget_7)
+        self.k01.setObjectName(u"k01")
+        self.k01.setGeometry(QRect(10, 10, 51, 41))
+        self.label_3 = QLabel(self.tabAvanzada)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(310, 40, 501, 61))
+        self.label_3.setFont(font1)
+        self.label_12 = QLabel(self.tabAvanzada)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setGeometry(QRect(370, 150, 61, 61))
+        self.label_12.setFont(font1)
+        self.label_13 = QLabel(self.tabAvanzada)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setGeometry(QRect(520, 150, 61, 61))
+        self.label_13.setFont(font1)
+        self.label_14 = QLabel(self.tabAvanzada)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setGeometry(QRect(680, 150, 61, 61))
+        self.label_14.setFont(font1)
+        self.widget_10 = QWidget(self.tabAvanzada)
+        self.widget_10.setObjectName(u"widget_10")
+        self.widget_10.setGeometry(QRect(750, 150, 71, 61))
+        self.widget_10.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.l00 = QLineEdit(self.widget_10)
+        self.l00.setObjectName(u"l00")
+        self.l00.setGeometry(QRect(10, 10, 51, 41))
+        self.label_15 = QLabel(self.tabAvanzada)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setGeometry(QRect(370, 240, 61, 61))
+        self.label_15.setFont(font1)
+        self.widget_11 = QWidget(self.tabAvanzada)
+        self.widget_11.setObjectName(u"widget_11")
+        self.widget_11.setGeometry(QRect(750, 240, 71, 61))
+        self.widget_11.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.l10 = QLineEdit(self.widget_11)
+        self.l10.setObjectName(u"l10")
+        self.l10.setGeometry(QRect(10, 10, 51, 41))
+        self.label_16 = QLabel(self.tabAvanzada)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setGeometry(QRect(680, 240, 61, 61))
+        self.label_16.setFont(font1)
+        self.widget_12 = QWidget(self.tabAvanzada)
+        self.widget_12.setObjectName(u"widget_12")
+        self.widget_12.setGeometry(QRect(440, 240, 71, 61))
+        self.widget_12.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k11 = QLineEdit(self.widget_12)
+        self.k11.setObjectName(u"k11")
+        self.k11.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_13 = QWidget(self.tabAvanzada)
+        self.widget_13.setObjectName(u"widget_13")
+        self.widget_13.setGeometry(QRect(290, 240, 71, 61))
+        self.widget_13.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k10 = QLineEdit(self.widget_13)
+        self.k10.setObjectName(u"k10")
+        self.k10.setGeometry(QRect(10, 10, 51, 41))
+        self.label_17 = QLabel(self.tabAvanzada)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(520, 240, 61, 61))
+        self.label_17.setFont(font1)
+        self.widget_14 = QWidget(self.tabAvanzada)
+        self.widget_14.setObjectName(u"widget_14")
+        self.widget_14.setGeometry(QRect(590, 240, 71, 61))
+        self.widget_14.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k12 = QLineEdit(self.widget_14)
+        self.k12.setObjectName(u"k12")
+        self.k12.setGeometry(QRect(10, 10, 51, 41))
+        self.label_18 = QLabel(self.tabAvanzada)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(520, 330, 61, 61))
+        self.label_18.setFont(font1)
+        self.label_19 = QLabel(self.tabAvanzada)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(370, 330, 61, 61))
+        self.label_19.setFont(font1)
+        self.widget_15 = QWidget(self.tabAvanzada)
+        self.widget_15.setObjectName(u"widget_15")
+        self.widget_15.setGeometry(QRect(590, 330, 71, 61))
+        self.widget_15.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k22 = QLineEdit(self.widget_15)
+        self.k22.setObjectName(u"k22")
+        self.k22.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_16 = QWidget(self.tabAvanzada)
+        self.widget_16.setObjectName(u"widget_16")
+        self.widget_16.setGeometry(QRect(440, 330, 71, 61))
+        self.widget_16.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k21 = QLineEdit(self.widget_16)
+        self.k21.setObjectName(u"k21")
+        self.k21.setGeometry(QRect(10, 10, 51, 41))
+        self.label_20 = QLabel(self.tabAvanzada)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(680, 330, 61, 61))
+        self.label_20.setFont(font1)
+        self.widget_17 = QWidget(self.tabAvanzada)
+        self.widget_17.setObjectName(u"widget_17")
+        self.widget_17.setGeometry(QRect(290, 330, 71, 61))
+        self.widget_17.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k20 = QLineEdit(self.widget_17)
+        self.k20.setObjectName(u"k20")
+        self.k20.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_18 = QWidget(self.tabAvanzada)
+        self.widget_18.setObjectName(u"widget_18")
+        self.widget_18.setGeometry(QRect(750, 330, 71, 61))
+        self.widget_18.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.l20 = QLineEdit(self.widget_18)
+        self.l20.setObjectName(u"l20")
+        self.l20.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_9 = QWidget(self.tabAvanzada)
+        self.widget_9.setObjectName(u"widget_9")
+        self.widget_9.setGeometry(QRect(590, 150, 71, 61))
+        self.widget_9.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.k02 = QLineEdit(self.widget_9)
+        self.k02.setObjectName(u"k02")
+        self.k02.setGeometry(QRect(10, 10, 51, 41))
+        self.label_21 = QLabel(self.tabAvanzada)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(320, 530, 61, 61))
+        self.label_21.setFont(font1)
+        self.label_22 = QLabel(self.tabAvanzada)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(630, 530, 61, 61))
+        self.label_22.setFont(font1)
+        self.widget_19 = QWidget(self.tabAvanzada)
+        self.widget_19.setObjectName(u"widget_19")
+        self.widget_19.setGeometry(QRect(390, 530, 71, 61))
+        self.widget_19.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.xRes = QLineEdit(self.widget_19)
+        self.xRes.setObjectName(u"xRes")
+        self.xRes.setGeometry(QRect(10, 10, 51, 41))
+        self.widget_20 = QWidget(self.tabAvanzada)
+        self.widget_20.setObjectName(u"widget_20")
+        self.widget_20.setGeometry(QRect(700, 530, 71, 61))
+        self.widget_20.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.zRes = QLineEdit(self.widget_20)
+        self.zRes.setObjectName(u"zRes")
+        self.zRes.setGeometry(QRect(10, 10, 51, 41))
+        self.label_23 = QLabel(self.tabAvanzada)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(470, 530, 61, 61))
+        self.label_23.setFont(font1)
+        self.widget_21 = QWidget(self.tabAvanzada)
+        self.widget_21.setObjectName(u"widget_21")
+        self.widget_21.setGeometry(QRect(540, 530, 71, 61))
+        self.widget_21.setStyleSheet(u" border-radius: 10px;\n"
+"    background-color: #E5E5E5;\n"
+"    border: 2px solid black;\n"
+"    font-weight: normal;\n"
+"    color: black;\n"
+"    padding: 5px;")
+        self.yRes = QLineEdit(self.widget_21)
+        self.yRes.setObjectName(u"yRes")
+        self.yRes.setGeometry(QRect(10, 10, 51, 41))
+        self.btnCalcularLineal = QPushButton(self.tabAvanzada)
+        self.btnCalcularLineal.setObjectName(u"btnCalcularLineal")
+        self.btnCalcularLineal.setGeometry(QRect(490, 430, 141, 51))
+        self.btnCalcularLineal.setFlat(False)
         self.tabWidget.addTab(self.tabAvanzada, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
@@ -309,9 +545,10 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget.setCurrentIndex(0)
-        self.tabWidget_2.setCurrentIndex(1)
+        self.tabWidget_2.setCurrentIndex(0)
         self.btnCalcularBasica.setDefault(False)
         self.btnCalcularInversa.setDefault(False)
+        self.btnCalcularLineal.setDefault(False)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -342,6 +579,20 @@ class Ui_MainWindow(object):
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Matriz A", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Inversa", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabBasica), QCoreApplication.translate("MainWindow", u"Aritmeticas", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Res. Eq Lineales por Matrices", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"X +", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"X +", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"X +", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"X =", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Y =", None))
+        self.btnCalcularLineal.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabAvanzada), QCoreApplication.translate("MainWindow", u"Operaciones Avanzadas", None))
     # retranslateUi
 
