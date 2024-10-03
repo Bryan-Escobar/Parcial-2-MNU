@@ -9,6 +9,9 @@ from PySide6 import *
 from formulario import Ui_MainWindow
 #Import para la tabla
 from PySide6.QtGui import QStandardItemModel, QStandardItem
+import numpy as np
+import matplotlib.pyplot as plt
+
 
 import math
 
@@ -307,7 +310,26 @@ class ClasePrincipal (QMainWindow):
             self.ui.tabPuntosRegresion.setItem(i, 0, QTableWidgetItem(str(x_values[i])))
             self.ui.tabPuntosRegresion.setItem(i, 1, QTableWidgetItem(str(y_values[i])))
             self.ui.tabPuntosRegresion.setItem(i, 2, QTableWidgetItem(str(xy[i])))
-            self.ui.tabPuntosRegresion.setItem(i, 3, QTableWidgetItem(str(x2[i])))        
+            self.ui.tabPuntosRegresion.setItem(i, 3, QTableWidgetItem(str(x2[i])))      
+        # Graficar los puntos y la recta de regresión
+        plt.scatter(x_values, y_values, color='blue', label='Puntos ingresados')
+
+        # Generar los valores de Y usando la ecuación de la recta y = ax + b
+        x_recta = np.linspace(min(x_values), max(x_values), 100)
+        y_recta = a * x_recta + b
+
+        # Graficar la recta de regresión
+        plt.plot(x_recta, y_recta, color='red', label=f'Recta de regresión: y = {a}x + {b}')
+
+        # Configurar etiquetas y título
+        plt.xlabel('X')
+        plt.ylabel('Y')
+        plt.title('Puntos y Recta de Regresión')
+        plt.legend()
+
+        # Mostrar el gráfico
+        plt.show()  
+        print("graficando")
             
     def actualizar_tabla(self):
         # Obtener el número de filas desde el QSpinBox
