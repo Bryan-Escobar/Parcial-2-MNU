@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'parcial2kTXRWE.ui'
+## Form generated from reading UI file 'parcial2PCpEKt.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -292,7 +292,7 @@ class Ui_MainWindow(object):
         self.i20.setGeometry(QRect(20, 160, 41, 41))
         self.label_2 = QLabel(self.tab_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(420, 20, 281, 61))
+        self.label_2.setGeometry(QRect(380, 20, 361, 61))
         self.label_2.setFont(font1)
         self.label_11 = QLabel(self.tab_3)
         self.label_11.setObjectName(u"label_11")
@@ -304,7 +304,7 @@ class Ui_MainWindow(object):
         self.tabAvanzada.setObjectName(u"tabAvanzada")
         self.widget_6 = QWidget(self.tabAvanzada)
         self.widget_6.setObjectName(u"widget_6")
-        self.widget_6.setGeometry(QRect(290, 150, 71, 61))
+        self.widget_6.setGeometry(QRect(250, 150, 71, 61))
         self.widget_6.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -316,7 +316,7 @@ class Ui_MainWindow(object):
         self.k00.setGeometry(QRect(10, 10, 51, 41))
         self.widget_7 = QWidget(self.tabAvanzada)
         self.widget_7.setObjectName(u"widget_7")
-        self.widget_7.setGeometry(QRect(440, 150, 71, 61))
+        self.widget_7.setGeometry(QRect(420, 150, 71, 61))
         self.widget_7.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -328,18 +328,18 @@ class Ui_MainWindow(object):
         self.k01.setGeometry(QRect(10, 10, 51, 41))
         self.label_3 = QLabel(self.tabAvanzada)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(300, 40, 561, 61))
+        self.label_3.setGeometry(QRect(200, 40, 751, 61))
         self.label_3.setFont(font1)
         self.label_12 = QLabel(self.tabAvanzada)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setGeometry(QRect(370, 150, 61, 61))
+        self.label_12.setGeometry(QRect(330, 150, 81, 61))
         font3 = QFont()
         font3.setPointSize(36)
         font3.setBold(True)
         self.label_12.setFont(font3)
         self.label_13 = QLabel(self.tabAvanzada)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setGeometry(QRect(520, 150, 61, 61))
+        self.label_13.setGeometry(QRect(500, 150, 71, 61))
         self.label_13.setFont(font3)
         self.label_14 = QLabel(self.tabAvanzada)
         self.label_14.setObjectName(u"label_14")
@@ -359,7 +359,7 @@ class Ui_MainWindow(object):
         self.l00.setGeometry(QRect(10, 10, 51, 41))
         self.label_15 = QLabel(self.tabAvanzada)
         self.label_15.setObjectName(u"label_15")
-        self.label_15.setGeometry(QRect(370, 240, 61, 61))
+        self.label_15.setGeometry(QRect(330, 240, 81, 61))
         self.label_15.setFont(font3)
         self.widget_11 = QWidget(self.tabAvanzada)
         self.widget_11.setObjectName(u"widget_11")
@@ -379,7 +379,7 @@ class Ui_MainWindow(object):
         self.label_16.setFont(font3)
         self.widget_12 = QWidget(self.tabAvanzada)
         self.widget_12.setObjectName(u"widget_12")
-        self.widget_12.setGeometry(QRect(440, 240, 71, 61))
+        self.widget_12.setGeometry(QRect(420, 240, 71, 61))
         self.widget_12.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -391,7 +391,7 @@ class Ui_MainWindow(object):
         self.k11.setGeometry(QRect(10, 10, 51, 41))
         self.widget_13 = QWidget(self.tabAvanzada)
         self.widget_13.setObjectName(u"widget_13")
-        self.widget_13.setGeometry(QRect(290, 240, 71, 61))
+        self.widget_13.setGeometry(QRect(250, 240, 71, 61))
         self.widget_13.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -403,7 +403,7 @@ class Ui_MainWindow(object):
         self.k10.setGeometry(QRect(10, 10, 51, 41))
         self.label_17 = QLabel(self.tabAvanzada)
         self.label_17.setObjectName(u"label_17")
-        self.label_17.setGeometry(QRect(520, 240, 61, 61))
+        self.label_17.setGeometry(QRect(500, 240, 71, 61))
         self.label_17.setFont(font3)
         self.widget_14 = QWidget(self.tabAvanzada)
         self.widget_14.setObjectName(u"widget_14")
@@ -419,11 +419,11 @@ class Ui_MainWindow(object):
         self.k12.setGeometry(QRect(10, 10, 51, 41))
         self.label_18 = QLabel(self.tabAvanzada)
         self.label_18.setObjectName(u"label_18")
-        self.label_18.setGeometry(QRect(520, 330, 61, 61))
+        self.label_18.setGeometry(QRect(500, 330, 71, 61))
         self.label_18.setFont(font3)
         self.label_19 = QLabel(self.tabAvanzada)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(370, 330, 61, 61))
+        self.label_19.setGeometry(QRect(330, 330, 71, 61))
         self.label_19.setFont(font3)
         self.widget_15 = QWidget(self.tabAvanzada)
         self.widget_15.setObjectName(u"widget_15")
@@ -439,7 +439,7 @@ class Ui_MainWindow(object):
         self.k22.setGeometry(QRect(10, 10, 51, 41))
         self.widget_16 = QWidget(self.tabAvanzada)
         self.widget_16.setObjectName(u"widget_16")
-        self.widget_16.setGeometry(QRect(440, 330, 71, 61))
+        self.widget_16.setGeometry(QRect(420, 330, 71, 61))
         self.widget_16.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -455,7 +455,7 @@ class Ui_MainWindow(object):
         self.label_20.setFont(font3)
         self.widget_17 = QWidget(self.tabAvanzada)
         self.widget_17.setObjectName(u"widget_17")
-        self.widget_17.setGeometry(QRect(290, 330, 71, 61))
+        self.widget_17.setGeometry(QRect(250, 330, 71, 61))
         self.widget_17.setStyleSheet(u" border-radius: 10px;\n"
 "    background-color: #E5E5E5;\n"
 "    border: 2px solid black;\n"
@@ -567,7 +567,7 @@ class Ui_MainWindow(object):
         self.label_24.setFont(font1)
         self.label_26 = QLabel(self.tab_2)
         self.label_26.setObjectName(u"label_26")
-        self.label_26.setGeometry(QRect(610, 130, 201, 61))
+        self.label_26.setGeometry(QRect(570, 130, 231, 61))
         font4 = QFont()
         font4.setFamilies([u"Montserrat"])
         font4.setPointSize(15)
@@ -575,7 +575,7 @@ class Ui_MainWindow(object):
         self.label_26.setFont(font4)
         self.label_27 = QLabel(self.tab_2)
         self.label_27.setObjectName(u"label_27")
-        self.label_27.setGeometry(QRect(610, 160, 201, 61))
+        self.label_27.setGeometry(QRect(570, 160, 201, 61))
         self.label_27.setFont(font4)
         self.sbPuntos = QSpinBox(self.tab_2)
         self.sbPuntos.setObjectName(u"sbPuntos")
@@ -619,6 +619,15 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Matriz B", None))
+        self.a00.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a01.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a02.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a11.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a10.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a12.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a21.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a22.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.a20.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Operaciones Basicas", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Matriz A", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Tipo de operacion", None))
@@ -626,6 +635,15 @@ class Ui_MainWindow(object):
         self.cbxOperacionBasica.setItemText(1, QCoreApplication.translate("MainWindow", u"RESTA", None))
         self.cbxOperacionBasica.setItemText(2, QCoreApplication.translate("MainWindow", u"MULTIPLICACION", None))
 
+        self.b00.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b01.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b02.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b11.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b10.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b12.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b21.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b22.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.b20.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.btnCalcularBasica.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Ingrese el valor de cadaelementos de las matrices A y B\n"
 "Las fracciones se deben ingresar como decimal", None))
@@ -637,20 +655,41 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Ingrese el valor de cada elemento de la matrices A \n"
 "Las fracciones se deben ingresar como decimal", None))
         self.btnCalcularInversa.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
+        self.i00.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i01.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i02.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i11.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i10.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i12.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i21.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i22.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.i20.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Matriz Inversa", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Matriz A", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Inversa", None))
         self.tabRegresion.setTabText(self.tabRegresion.indexOf(self.tabBasica), QCoreApplication.translate("MainWindow", u"Aritmeticas", None))
+        self.k00.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.k01.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Res. Eq Lineales por Matrices", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"X +", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.l00.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"X +", None))
+        self.l10.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.k11.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.k10.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
+        self.k12.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"X +", None))
+        self.k22.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.k21.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
+        self.k20.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.l20.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.k02.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"X =", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Y =", None))

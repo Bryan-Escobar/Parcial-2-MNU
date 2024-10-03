@@ -1,4 +1,5 @@
 from math import sqrt
+import tkinter.messagebox
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import *
 import sys
@@ -11,8 +12,8 @@ from formulario import Ui_MainWindow
 from PySide6.QtGui import QStandardItemModel, QStandardItem
 import numpy as np
 import matplotlib.pyplot as plt
-
-
+import warnings
+import tkinter
 import math
 
 
@@ -43,10 +44,18 @@ class ClasePrincipal (QMainWindow):
                 res.append([0]*3)
 
         #lectura de datos
-        for i in range(3):
-            for j in range(3):
-                a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
-                b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
+        try:
+            for i in range(3):
+                for j in range(3):
+                    a[i][j] = float(getattr(self.ui,  f'a{i}{j}' ).text())
+                    b[i][j] = float(getattr(self.ui,  f'b{i}{j}' ).text())
+        except:
+            #warnings.warn("Este es un mensaje de advertencia", UserWarning)
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia", "Las matrices solo aceptan valores numericos")
+            root.destroy()
+            return
         seleccion=self.ui.cbxOperacionBasica.currentText()
         
         if seleccion=="SUMA":
@@ -87,9 +96,17 @@ class ClasePrincipal (QMainWindow):
                 a.append([0]*3)
                 
         #obtener valores ingresados
-        for i in range(3):
-            for j in range(3):
-                a[i][j] = float(getattr(self.ui,  f'i{i}{j}' ).text())
+        try:
+            for i in range(3):
+                for j in range(3):
+                    a[i][j] = float(getattr(self.ui,  f'i{i}{j}' ).text())
+        except:
+            #warnings.warn("Este es un mensaje de advertencia", UserWarning)
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia", "Las matrices solo aceptan valores numericos")
+            root.destroy()
+            return
         
         # #imprimir matriz
         # print('Matriz')
@@ -171,15 +188,21 @@ class ClasePrincipal (QMainWindow):
         for i in range(3):
             l.append([0] * 1)
                 
+        try:
+            for i in range(3):
+                for j in range(3):
+                    invM[i][j] = float(getattr(self.ui,  f'k{i}{j}' ).text())
+                        
 
-        for i in range(3):
-            for j in range(3):
-                invM[i][j] = float(getattr(self.ui,  f'k{i}{j}' ).text())
-                    
-
-        for i in range(3):
-            l[i][0] = float(getattr(self.ui,  f'l{i}{0}' ).text())
-            
+            for i in range(3):
+                l[i][0] = float(getattr(self.ui,  f'l{i}{0}' ).text())
+        except:
+            #warnings.warn("Este es un mensaje de advertencia", UserWarning)
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia", "Los valores ingresados deben ser numericos")
+            root.destroy()
+            return
         # calcular el determinante
         dp = invM[0][0]*invM[1][1]*invM[2][2] + invM[1][0]*invM[2][1]*invM[0][2] + invM[2][0]*invM[0][1]*invM[1][2]
         ds = invM[0][2]*invM[1][1]*invM[2][0] + invM[1][2]*invM[2][1]*invM[0][0] + invM[2][2]*invM[0][1]*invM[1][0]
@@ -188,6 +211,10 @@ class ClasePrincipal (QMainWindow):
 
         if det == 0:
             print("El determinante es cero, no se puede calcular la inversa")
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia","El determinante es cero, no se puede calcular la inversa")
+            root.destroy()
             return
 
     
@@ -263,10 +290,20 @@ class ClasePrincipal (QMainWindow):
             except ValueError:
                 # Si alguna celda tiene un valor inválido, podemos ignorarlo o manejar el error
                 print(f"Error en la fila {row}: Valores inválidos")
+                #warnings.warn("Este es un mensaje de advertencia", UserWarning)
+                root = tkinter.Tk()
+                root.withdraw() 
+                tkinter.messagebox.showwarning("Advertencia", "Valores inválidos, La tabla solo acepta valores numericos")
+                root.destroy()
+                return
 
         # Verifica que se hayan ingresado puntos válidos
         if len(x_values) == 0 or len(y_values) == 0:
             print("No se ingresaron suficientes puntos válidos.")
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia", "No se ingresaron suficientes puntos válidos.")
+            root.destroy()
             return
         
         #print(f"Lista X: {x_values}")
@@ -290,6 +327,10 @@ class ClasePrincipal (QMainWindow):
         # Evitar división por cero (caso en que todos los puntos tengan el mismo valor de X)
         if n_valid * sumX2 - (sumX) ** 2 == 0:
             print("Error: División por cero. Todos los puntos tienen el mismo valor de X.")
+            root = tkinter.Tk()
+            root.withdraw() 
+            tkinter.messagebox.showwarning("Advertencia", "Error: División por cero. Todos los puntos tienen el mismo valor de X.")
+            root.destroy()
             return
 
         # Cálculo de la pendiente (a) y la intersección (b)

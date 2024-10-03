@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tabBasica">
      <attribute name="title">
@@ -91,6 +91,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="a01">
          <property name="geometry">
@@ -100,6 +103,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="a02">
@@ -111,6 +117,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="a11">
          <property name="geometry">
@@ -120,6 +129,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="a10">
@@ -131,6 +143,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="a12">
          <property name="geometry">
@@ -140,6 +155,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="a21">
@@ -151,6 +169,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="a22">
          <property name="geometry">
@@ -161,6 +182,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="a20">
          <property name="geometry">
@@ -170,6 +194,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
        </widget>
@@ -282,6 +309,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="b01">
          <property name="geometry">
@@ -291,6 +321,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="b02">
@@ -302,6 +335,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="b11">
          <property name="geometry">
@@ -311,6 +347,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="b10">
@@ -322,6 +361,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="b12">
          <property name="geometry">
@@ -331,6 +373,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="b21">
@@ -342,6 +387,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="b22">
          <property name="geometry">
@@ -352,6 +400,9 @@
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="b20">
          <property name="geometry">
@@ -361,6 +412,9 @@
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
        </widget>
@@ -763,6 +817,9 @@ Las fracciones se deben ingresar como decimal</string>
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="i01">
          <property name="geometry">
@@ -772,6 +829,9 @@ Las fracciones se deben ingresar como decimal</string>
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="i02">
@@ -783,6 +843,9 @@ Las fracciones se deben ingresar como decimal</string>
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="i11">
          <property name="geometry">
@@ -792,6 +855,9 @@ Las fracciones se deben ingresar como decimal</string>
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="i10">
@@ -803,6 +869,9 @@ Las fracciones se deben ingresar como decimal</string>
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="i12">
          <property name="geometry">
@@ -812,6 +881,9 @@ Las fracciones se deben ingresar como decimal</string>
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="i21">
@@ -823,6 +895,9 @@ Las fracciones se deben ingresar como decimal</string>
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
         <widget class="QLineEdit" name="i22">
          <property name="geometry">
@@ -832,6 +907,9 @@ Las fracciones se deben ingresar como decimal</string>
            <width>41</width>
            <height>41</height>
           </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
          </property>
         </widget>
         <widget class="QLineEdit" name="i20">
@@ -843,14 +921,17 @@ Las fracciones se deben ingresar como decimal</string>
            <height>41</height>
           </rect>
          </property>
+         <property name="text">
+          <string>0</string>
+         </property>
         </widget>
        </widget>
        <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
-          <x>420</x>
+          <x>380</x>
           <y>20</y>
-          <width>281</width>
+          <width>361</width>
           <height>61</height>
          </rect>
         </property>
@@ -894,7 +975,7 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QWidget" name="widget_6" native="true">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>250</x>
         <y>150</y>
         <width>71</width>
         <height>61</height>
@@ -917,12 +998,15 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="widget_7" native="true">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>420</x>
         <y>150</y>
         <width>71</width>
         <height>61</height>
@@ -945,14 +1029,17 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>200</x>
         <y>40</y>
-        <width>561</width>
+        <width>751</width>
         <height>61</height>
        </rect>
       </property>
@@ -970,9 +1057,9 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>330</x>
         <y>150</y>
-        <width>61</width>
+        <width>81</width>
         <height>61</height>
        </rect>
       </property>
@@ -989,9 +1076,9 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>500</x>
         <y>150</y>
-        <width>61</width>
+        <width>71</width>
         <height>61</height>
        </rect>
       </property>
@@ -1050,14 +1137,17 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>330</x>
         <y>240</y>
-        <width>61</width>
+        <width>81</width>
         <height>61</height>
        </rect>
       </property>
@@ -1097,6 +1187,9 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_16">
@@ -1121,7 +1214,7 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QWidget" name="widget_12" native="true">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>420</x>
         <y>240</y>
         <width>71</width>
         <height>61</height>
@@ -1144,12 +1237,15 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="widget_13" native="true">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>250</x>
         <y>240</y>
         <width>71</width>
         <height>61</height>
@@ -1172,14 +1268,17 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>500</x>
         <y>240</y>
-        <width>61</width>
+        <width>71</width>
         <height>61</height>
        </rect>
       </property>
@@ -1219,14 +1318,17 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>500</x>
         <y>330</y>
-        <width>61</width>
+        <width>71</width>
         <height>61</height>
        </rect>
       </property>
@@ -1243,9 +1345,9 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>330</x>
         <y>330</y>
-        <width>61</width>
+        <width>71</width>
         <height>61</height>
        </rect>
       </property>
@@ -1285,12 +1387,15 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="widget_16" native="true">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>420</x>
         <y>330</y>
         <width>71</width>
         <height>61</height>
@@ -1312,6 +1417,9 @@ Las fracciones se deben ingresar como decimal</string>
          <width>51</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
        </property>
       </widget>
      </widget>
@@ -1337,7 +1445,7 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QWidget" name="widget_17" native="true">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>250</x>
         <y>330</y>
         <width>71</width>
         <height>61</height>
@@ -1359,6 +1467,9 @@ Las fracciones se deben ingresar como decimal</string>
          <width>51</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
        </property>
       </widget>
      </widget>
@@ -1388,6 +1499,9 @@ Las fracciones se deben ingresar como decimal</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="text">
+        <string>0</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="widget_9" native="true">
@@ -1415,6 +1529,9 @@ Las fracciones se deben ingresar como decimal</string>
          <width>51</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
        </property>
       </widget>
      </widget>
@@ -1652,9 +1769,9 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QLabel" name="label_26">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>570</x>
         <y>130</y>
-        <width>201</width>
+        <width>231</width>
         <height>61</height>
        </rect>
       </property>
@@ -1672,7 +1789,7 @@ Las fracciones se deben ingresar como decimal</string>
      <widget class="QLabel" name="label_27">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>570</x>
         <y>160</y>
         <width>201</width>
         <height>61</height>
