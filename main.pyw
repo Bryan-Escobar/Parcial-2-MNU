@@ -24,6 +24,8 @@ class ClasePrincipal (QMainWindow):
         self.ui.btnCalcularBasica.clicked.connect(self.CalcularBasica)
         self.ui.btnCalcularInversa.clicked.connect(self.CalcularInversa)
         self.ui.btnCalcularLineal.clicked.connect(self.CalcularEqLineal)
+        self.ui.btnAggPuntos.clicked.connect(self.actualizar_tabla)
+        self.ui.btnCalcularRegresionLineal.clicked.connect(self.CalcularRegresionLineal)
         
     def CalcularBasica(self):
         a=[]
@@ -230,6 +232,96 @@ class ClasePrincipal (QMainWindow):
 
         for i in range(3):
             getattr(self.ui, f'Res{i}{0}').setText(str(eqLineal[i]))
+    
+    def CalcularRegresionLineal(self):
+        # Crear las listas vacías para X e Y
+        
+        # Listas para almacenar los valores de x, y, x*y, y x^2
+        x_values = []  # valores de x
+        y_values = []  # valores de y
+        xy = []  # valores de x*y
+        x2 = []  # valores de x^2
+        n = self.ui.tabPuntosRegresion.rowCount()
+        
+        # Recorrer las filas de la tabla
+        for row in range(n):
+            try:
+                # Obtener los valores de las celdas de la columna 0 (X) y la columna 1 (Y)
+                x_item = self.ui.tabPuntosRegresion.item(row, 0)  # Columna X
+                y_item = self.ui.tabPuntosRegresion.item(row, 1)  # Columna Y
+
+                if x_item is not None and y_item is not None:
+                    # Convertir los textos a float y añadirlos a las listas
+                    x = float(x_item.text())
+                    y = float(y_item.text())
+                    x_values.append(x)
+                    y_values.append(y)
+                    
+            except ValueError:
+                # Si alguna celda tiene un valor inválido, podemos ignorarlo o manejar el error
+                print(f"Error en la fila {row}: Valores inválidos")
+
+        # Verifica que se hayan ingresado puntos válidos
+        if len(x_values) == 0 or len(y_values) == 0:
+            print("No se ingresaron suficientes puntos válidos.")
+            return
+        
+        #print(f"Lista X: {x_values}")
+        #print(f"Lista Y: {y_values}")
+        
+        # Calcular los valores de x * y y x^2
+        for i in range(len(x_values)):  # Usar la longitud de x_values, no n
+            xy.append(x_values[i] * y_values[i])  # x * y
+            x2.append(x_values[i] ** 2)    # x^2
+
+        # Sumar las listas para los cálculos
+        sumX = sum(x_values)  # Sumatoria de x
+        sumY = sum(y_values)  # Sumatoria de y
+        sumXY = sum(xy)  # Sumatoria de x * y
+        sumX2 = sum(x2)  # Sumatoria de x^2
+
+        
+        # Obtener la cantidad de puntos válidos
+        n_valid = len(x_values)
+        
+        # Evitar división por cero (caso en que todos los puntos tengan el mismo valor de X)
+        if n_valid * sumX2 - (sumX) ** 2 == 0:
+            print("Error: División por cero. Todos los puntos tienen el mismo valor de X.")
+            return
+
+        # Cálculo de la pendiente (a) y la intersección (b)
+        a = round((n_valid * sumXY - (sumX * sumY)) / (n_valid * sumX2 - (sumX) ** 2), 2)
+        #print("a: " + str(a))
+        
+        b = round(((sumY / n_valid) - a * (sumX / n_valid)), 2)
+        #print("b: " + str(b))
+        
+        # Mostrar la ecuación en un campo de texto
+        self.ui.txtFuncionRegresion.setText(f"y = {a}x + {b}")
+        
+        self.ui.tabPuntosRegresion.setColumnCount(4)
+        self.ui.tabPuntosRegresion.setHorizontalHeaderLabels(["X", "Y", "X*Y", "X^2"])
+        self.ui.tabPuntosRegresion.setRowCount(n)
+        
+        for i in range(n):
+            self.ui.tabPuntosRegresion.setItem(i, 0, QTableWidgetItem(str(x_values[i])))
+            self.ui.tabPuntosRegresion.setItem(i, 1, QTableWidgetItem(str(y_values[i])))
+            self.ui.tabPuntosRegresion.setItem(i, 2, QTableWidgetItem(str(xy[i])))
+            self.ui.tabPuntosRegresion.setItem(i, 3, QTableWidgetItem(str(x2[i])))        
+            
+    def actualizar_tabla(self):
+        # Obtener el número de filas desde el QSpinBox
+        num_rows = self.ui.sbPuntos.value()
+
+        # Ajustar el número de filas en la tabla
+        self.ui.tabPuntosRegresion.setRowCount(num_rows)
+
+        # Opcional: Borrar los contenidos anteriores
+        for row in range(num_rows):
+            for col in range(2):  # Limpiar las columnas X y Y
+                self.ui.tabPuntosRegresion.setItem(row, col, QTableWidgetItem(""))
+
+
     
 if __name__ == "__main__":
     app=QApplication(sys.argv)

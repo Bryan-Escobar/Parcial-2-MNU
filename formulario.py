@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'parcial2WOgoQv.ui'
+## Form generated from reading UI file 'parcial2kTXRWE.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -15,9 +15,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QDockWidget, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QStatusBar, QTabWidget, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QDockWidget, QHeaderView,
+    QLabel, QLineEdit, QMainWindow, QPushButton,
+    QSizePolicy, QSpinBox, QStatusBar, QTabWidget,
+    QTableWidget, QTableWidgetItem, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -26,9 +27,9 @@ class Ui_MainWindow(object):
         MainWindow.resize(1158, 724)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.tabWidget = QTabWidget(self.centralwidget)
-        self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setGeometry(QRect(6, -1, 1161, 711))
+        self.tabRegresion = QTabWidget(self.centralwidget)
+        self.tabRegresion.setObjectName(u"tabRegresion")
+        self.tabRegresion.setGeometry(QRect(10, 0, 1161, 711))
         self.tabBasica = QWidget()
         self.tabBasica.setObjectName(u"tabBasica")
         self.tabWidget_2 = QTabWidget(self.tabBasica)
@@ -298,7 +299,7 @@ class Ui_MainWindow(object):
         self.label_11.setGeometry(QRect(340, 160, 51, 31))
         self.label_11.setFont(font)
         self.tabWidget_2.addTab(self.tab_3, "")
-        self.tabWidget.addTab(self.tabBasica, "")
+        self.tabRegresion.addTab(self.tabBasica, "")
         self.tabAvanzada = QWidget()
         self.tabAvanzada.setObjectName(u"tabAvanzada")
         self.widget_6 = QWidget(self.tabAvanzada)
@@ -540,7 +541,62 @@ class Ui_MainWindow(object):
         self.btnCalcularLineal.setObjectName(u"btnCalcularLineal")
         self.btnCalcularLineal.setGeometry(QRect(490, 430, 141, 51))
         self.btnCalcularLineal.setFlat(False)
-        self.tabWidget.addTab(self.tabAvanzada, "")
+        self.tabRegresion.addTab(self.tabAvanzada, "")
+        self.tab_2 = QWidget()
+        self.tab_2.setObjectName(u"tab_2")
+        self.tabPuntosRegresion = QTableWidget(self.tab_2)
+        if (self.tabPuntosRegresion.columnCount() < 2):
+            self.tabPuntosRegresion.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.tabPuntosRegresion.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.tabPuntosRegresion.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        if (self.tabPuntosRegresion.rowCount() < 1):
+            self.tabPuntosRegresion.setRowCount(1)
+        self.tabPuntosRegresion.setObjectName(u"tabPuntosRegresion")
+        self.tabPuntosRegresion.setGeometry(QRect(60, 110, 421, 481))
+        self.tabPuntosRegresion.setRowCount(1)
+        self.tabPuntosRegresion.setColumnCount(2)
+        self.btnAggPuntos = QPushButton(self.tab_2)
+        self.btnAggPuntos.setObjectName(u"btnAggPuntos")
+        self.btnAggPuntos.setGeometry(QRect(930, 160, 121, 41))
+        self.btnAggPuntos.setFlat(False)
+        self.label_24 = QLabel(self.tab_2)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setGeometry(QRect(400, 20, 561, 61))
+        self.label_24.setFont(font1)
+        self.label_26 = QLabel(self.tab_2)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setGeometry(QRect(610, 130, 201, 61))
+        font4 = QFont()
+        font4.setFamilies([u"Montserrat"])
+        font4.setPointSize(15)
+        font4.setBold(True)
+        self.label_26.setFont(font4)
+        self.label_27 = QLabel(self.tab_2)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setGeometry(QRect(610, 160, 201, 61))
+        self.label_27.setFont(font4)
+        self.sbPuntos = QSpinBox(self.tab_2)
+        self.sbPuntos.setObjectName(u"sbPuntos")
+        self.sbPuntos.setGeometry(QRect(810, 160, 91, 41))
+        self.txtFuncionRegresion = QLineEdit(self.tab_2)
+        self.txtFuncionRegresion.setObjectName(u"txtFuncionRegresion")
+        self.txtFuncionRegresion.setGeometry(QRect(540, 550, 251, 41))
+        self.label_28 = QLabel(self.tab_2)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setGeometry(QRect(550, 490, 161, 61))
+        font5 = QFont()
+        font5.setFamilies([u"Montserrat"])
+        font5.setPointSize(24)
+        font5.setBold(True)
+        font5.setItalic(False)
+        self.label_28.setFont(font5)
+        self.btnCalcularRegresionLineal = QPushButton(self.tab_2)
+        self.btnCalcularRegresionLineal.setObjectName(u"btnCalcularRegresionLineal")
+        self.btnCalcularRegresionLineal.setGeometry(QRect(610, 230, 141, 51))
+        self.btnCalcularRegresionLineal.setFlat(False)
+        self.tabRegresion.addTab(self.tab_2, "")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -548,11 +604,13 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(1)
+        self.tabRegresion.setCurrentIndex(2)
         self.tabWidget_2.setCurrentIndex(1)
         self.btnCalcularBasica.setDefault(False)
         self.btnCalcularInversa.setDefault(False)
         self.btnCalcularLineal.setDefault(False)
+        self.btnAggPuntos.setDefault(False)
+        self.btnCalcularRegresionLineal.setDefault(False)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -582,7 +640,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Matriz Inversa", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Matriz A", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Inversa", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabBasica), QCoreApplication.translate("MainWindow", u"Aritmeticas", None))
+        self.tabRegresion.setTabText(self.tabRegresion.indexOf(self.tabBasica), QCoreApplication.translate("MainWindow", u"Aritmeticas", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Res. Eq Lineales por Matrices", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"X +", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"Y +", None))
@@ -597,6 +655,17 @@ class Ui_MainWindow(object):
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Z =", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Y =", None))
         self.btnCalcularLineal.setText(QCoreApplication.translate("MainWindow", u"CALCULAR", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabAvanzada), QCoreApplication.translate("MainWindow", u"Operaciones Avanzadas", None))
+        self.tabRegresion.setTabText(self.tabRegresion.indexOf(self.tabAvanzada), QCoreApplication.translate("MainWindow", u"Operaciones Avanzadas", None))
+        ___qtablewidgetitem = self.tabPuntosRegresion.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"X", None));
+        ___qtablewidgetitem1 = self.tabPuntosRegresion.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Y", None));
+        self.btnAggPuntos.setText(QCoreApplication.translate("MainWindow", u"Agregar puntos", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Regresi\u00f3n Lineal", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Ingrese el numero de", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"puntos a evaluar", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Y = ax+b", None))
+        self.btnCalcularRegresionLineal.setText(QCoreApplication.translate("MainWindow", u"Calcular", None))
+        self.tabRegresion.setTabText(self.tabRegresion.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Regresi\u00f3n Lineal", None))
     # retranslateUi
 
