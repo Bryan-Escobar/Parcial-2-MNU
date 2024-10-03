@@ -173,14 +173,14 @@ class ClasePrincipal (QMainWindow):
                        
     def CalcularEqLineal(self):
 
-        invM = []
+        invMa = []
         aCof = []
         aT = []
         l = []
         eqLineal = [0] * 3 
                     
         for i in range(3):
-            invM.append([0] * 3)
+            invMa.append([0] * 3)
             aCof.append([0] * 3)
             aT.append([0] * 3)
             
@@ -191,7 +191,7 @@ class ClasePrincipal (QMainWindow):
         try:
             for i in range(3):
                 for j in range(3):
-                    invM[i][j] = float(getattr(self.ui,  f'k{i}{j}' ).text())
+                    invMa[i][j] = float(getattr(self.ui,  f'k{i}{j}' ).text())
                         
 
             for i in range(3):
@@ -204,8 +204,8 @@ class ClasePrincipal (QMainWindow):
             root.destroy()
             return
         # calcular el determinante
-        dp = invM[0][0]*invM[1][1]*invM[2][2] + invM[1][0]*invM[2][1]*invM[0][2] + invM[2][0]*invM[0][1]*invM[1][2]
-        ds = invM[0][2]*invM[1][1]*invM[2][0] + invM[1][2]*invM[2][1]*invM[0][0] + invM[2][2]*invM[0][1]*invM[1][0]
+        dp = invMa[0][0]*invMa[1][1]*invMa[2][2] + invMa[1][0]*invMa[2][1]*invMa[0][2] + invMa[2][0]*invMa[0][1]*invMa[1][2]
+        ds = invMa[0][2]*invMa[1][1]*invMa[2][0] + invMa[1][2]*invMa[2][1]*invMa[0][0] + invMa[2][2]*invMa[0][1]*invMa[1][0]
         det = dp - ds
             
 
@@ -218,33 +218,29 @@ class ClasePrincipal (QMainWindow):
             return
 
     
-        aCof[0][0] = invM[1][1]*invM[2][2] - invM[1][2]*invM[2][1]
-        aCof[0][1] = -(invM[1][0]*invM[2][2] - invM[2][0]*invM[1][2])
-        aCof[0][2] = invM[1][0]*invM[2][1] - invM[1][1]*invM[2][0]
+        aCof[0][0] = invMa[1][1]*invMa[2][2] - invMa[1][2]*invMa[2][1]
+        aCof[0][1] = -(invMa[1][0]*invMa[2][2] - invMa[2][0]*invMa[1][2])
+        aCof[0][2] = invMa[1][0]*invMa[2][1] - invMa[1][1]*invMa[2][0]
 
-        aCof[1][0] = -(invM[0][1]*invM[2][2] - invM[2][1]*invM[0][2])
-        aCof[1][1] = invM[0][0]*invM[2][2] - invM[2][0]*invM[0][2]
-        aCof[1][2] = -(invM[0][0]*invM[2][1] - invM[2][0]*invM[0][1])
+        aCof[1][0] = -(invMa[0][1]*invMa[2][2] - invMa[2][1]*invMa[0][2])
+        aCof[1][1] = invMa[0][0]*invMa[2][2] - invMa[2][0]*invMa[0][2]
+        aCof[1][2] = -(invMa[0][0]*invMa[2][1] - invMa[2][0]*invMa[0][1])
 
-        aCof[2][0] = invM[0][1]*invM[1][2] - invM[1][1]*invM[0][2]
-        aCof[2][1] = -(invM[0][0]*invM[1][2] - invM[1][0]*invM[0][2])
-        aCof[2][2] = invM[0][0]*invM[1][1] - invM[1][0]*invM[0][1]
+        aCof[2][0] = invMa[0][1]*invMa[1][2] - invMa[1][1]*invMa[0][2]
+        aCof[2][1] = -(invMa[0][0]*invMa[1][2] - invMa[1][0]*invMa[0][2])
+        aCof[2][2] = invMa[0][0]*invMa[1][1] - invMa[1][0]*invMa[0][1]
             
-        # Calculate adjoint matrix (transpose of cofactor matrix)
+        # calcular adjunta
         for i in range(3):
             for j in range(3):
                 aT[i][j] = aCof[j][i]
                     
-        # Divide adjoint matrix by determinant to get the inverse matrix
+        # Adjunta entre matriz
         for i in range(3):
             for j in range(3):
-                invM[i][j] = round(aT[i][j] / det, 2)
+                invMa[i][j] = round(aT[i][j] / det, 2)
                     
-        # Display the inverse matrix in the UI
-        for i in range(3):
-            for j in range(3):
-                self.ui.dockBasica_2.show()
-                getattr(self.ui, f'j{i}{j}').setText(str(invM[i][j]))
+       
             
         #impriir matriz inversa
         # print('Matriz inversa:')
@@ -257,7 +253,7 @@ class ClasePrincipal (QMainWindow):
             
         #multiplicar la matriz inversa por el vector l
         for i in range(3):
-            eqLineal[i] = round(invM[i][0] * l[0][0] + invM[i][1] * l[1][0] + invM[i][2] * l[2][0], 2)
+            eqLineal[i] = round(invMa[i][0] * l[0][0] + invMa[i][1] * l[1][0] + invMa[i][2] * l[2][0], 2)
                         
 
         for i in range(3):
